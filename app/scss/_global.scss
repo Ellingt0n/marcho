@@ -28,3 +28,20 @@ a {
 	font-size: 16px;
 	@extend %quicksand-500;
 }
+.title {
+	@extend %roboto-700;
+	color: $title;
+	font-size: 48px;
+	line-height: 26px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.text {
+	@extend %quicksand-400;
+	font-size: 16px;
+	line-height: 26px;
+	color: $default;
+	width: 570px;
+	text-align: center;
+	margin: 0 auto 60px;
+}
