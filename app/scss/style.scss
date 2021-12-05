@@ -538,6 +538,75 @@
 .star {
 	margin: 0 auto;
 }
+.promo {
+	background-image: url(../images/promo-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 160px 0 160px;
+	text-align: center;
+	&__inner {
+		max-width: 570px;
+		width: 100%;	
+		margin-left: auto;
+	}
+	&__subtitle {
+		color: $accent;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 22px;
+	}
+	&__title {
+		@extend %roboto-700;
+		color: $title;
+		font-size: 48px;
+		line-height: 26px;
+		margin-top: 30px;
+	}
+	&__link {
+		@extend %roboto-400;
+		display: inline-block;
+		border: 1px solid $accent;
+		padding: 14px 27px;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: $title;
+	}
+	&__clock {
+		display: flex;
+		justify-content: space-between;
+		margin: 65px 0;
+	}
+	&__clock-item {
+		background-color: #fff;
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		span{
+			font-size: 48px;
+			line-height: 26px;
+			color: $title;
+			@extend %roboto-700;
+			margin-bottom: 7px;
+			margin-top: 12px;
+		}
+	}
+	&__text {
+		color: #8d8d8d;
+	}
+}
+.partners {
+	padding-top: 75px;
+	&__list {
+		height: 170px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
 
 
 
