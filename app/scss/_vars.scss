@@ -27,3 +27,9 @@ $bg:#F6F6F6;
 	background-color: $accent;
 	box-shadow: 0px 7px 20px 0px rgba(255,17,48 , 0.3);	
 }
+%checkbox-hiden {
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
