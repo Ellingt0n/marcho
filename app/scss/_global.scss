@@ -1,2 +1,132 @@
+html,
+body {
+	height: 100%;
+}
 
+body {
+	color: $default;
+	font-size: 16px;
+	line-height: 26px;
+	@extend %quicksand-500;
+	display: flex;
+	flex-direction: column;
+}
 
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+a {
+	text-decoration: none;
+	color: $default;
+	font-size: 16px;
+	@extend %quicksand-500;
+}
+.title {
+	@extend %roboto-700;
+	color: $title;
+	font-size: 48px;
+	line-height: 26px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.text {
+	@extend %quicksand-400;
+	font-size: 16px;
+	line-height: 26px;
+	color: $default;
+	width: 570px;
+	text-align: center;
+	margin: 0 auto 60px;
+}
+.breadcrumbs {
+	display: inline-flex;
+	justify-content: center;
+	padding-left: 25px;
+	position: relative;
+	&::before{
+		content: '';
+		position: absolute;
+		background-image: url(../images/icons/home_icon.svg);
+		width: 16px;
+		height: 16px;
+		left: 0;
+		top: 5px;
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		color: #727272;
+		padding-right: 40px;
+		position: relative;
+		&::after{
+			content: '';
+			position: absolute;
+			background-image: url(../images/icons/angle_right.svg);
+			height: 9px;
+			width: 10px;
+			right: 15px;
+			top:9px;
+		}
+		&:last-child {
+			color: $accent;
+			padding-right: 0;
+			&::after{
+				display: none;
+			}
+		}
+	}
+	&__link {
+		color: inherit;
+	}
+}
+.header--404-page {
+	background-color: $bg;
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0px;
+	.pagination__list {
+		display: flex;
+		padding: 0 35px;
+	}
+	&__arrows {
+		text-transform: uppercase;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 5px;
+			height: 10px;
+			top: 8px;
+		}
+	}
+	.poagination__item +.poagination__item  {
+		margin-left: 15px;
+	}
+	&__link--active {
+		color: $accent;
+	}
+	&__prew {
+		padding-left: 15px;
+		&::before {
+			background-image: url(../images/icons/angle-pag.svg);
+			left: 0;
+		}
+	}
+	&__next {
+		padding-right: 15px;
+		&::before {
+			background-image: url(../images/icons/angle-pag-r.svg);
+			right: 0;
+		}
+	}
+}

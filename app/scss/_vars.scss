@@ -1,0 +1,36 @@
+$accent: #fe3e57;
+$default: #8d8d8d;
+$title:#29282d;
+$bg:#F6F6F6;
+
+
+%quicksand-400 {
+	font-family: 'Quicksand-regular' , sans-serif;
+	font-weight: 400;
+}
+%quicksand-500 {
+	font-family: 'Quicksand-Medium' , sans-serif;
+	font-weight: 500;
+}
+%roboto-400 {
+	font-family: 'Roboto-regular' , sans-serif;
+	font-weight: 400;
+}
+%roboto-700 {
+	font-family: 'Roboto-bold' , sans-serif;
+	font-weight: 700;
+}
+%btn {
+	padding: 14px 26px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: $accent;
+	box-shadow: 0px 7px 20px 0px rgba(255,17,48 , 0.3);	
+}
+%checkbox-hiden,
+%radio-hidden {
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}

@@ -1,0 +1,49 @@
+.video-fashion {
+	padding: 120px 0;
+	background-color: $bg;
+	background-image: url(../images/fashion-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	&__inner {
+		display: flex;
+	}
+	&__popup {
+		margin-right: 60px;
+		min-width: 535px;
+		width: 100%;
+		height: 479px;
+		background-image: url(../images/video_fashion.jpg);
+		background-repeat: no-repeat;
+		background-size: center;
+		display: flex;
+		justify-content: center;
+		align-items:center;
+	}
+	&__content {
+		margin-top: 65px;
+	}
+	&__subtitle {
+		@extend %quicksand-500;
+		font-size: 22px;
+		line-height: 26px;	
+		text-transform: uppercase;
+		color: $accent;
+		width: 565px;
+	}
+	&__title {
+		@extend %roboto-700;
+		color: $title;
+		font-size: 48px;
+		line-height: 26px;
+		padding: 25px 0 35px;
+	}
+	&__link {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: #ffffff;
+		padding: 20px 30px;
+		background-color: $accent;
+		display: inline-block;
+		margin-top: 60px;
+	}
+}
